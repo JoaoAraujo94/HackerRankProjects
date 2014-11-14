@@ -6,9 +6,9 @@ public class maximizeXOR {
     
     static int maxXor(int l, int r) {
         int res = 0;
-        while(l < r) {
+        while(l <= r) {
             int aux = l;
-            while(aux < r) {
+            while(aux <= r) {
                 if((l ^ aux) > res) {
                     res = (l^aux);
                 }
